@@ -9,7 +9,7 @@ import retrofit2.http.GET
 
 interface UserApiService {
 
-    @GET("/users?since=1&page=1&per_page=10")
+    @GET("/repos/googlesamples/android-architecture-components/contributors")
     fun getUsers(): Single<List<User>>
 
 
