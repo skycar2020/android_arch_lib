@@ -1,4 +1,4 @@
-package com.skycar.archlib
+package com.mvvm.demo
 
 import org.junit.Test
 

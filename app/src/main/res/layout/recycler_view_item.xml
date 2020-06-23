@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools">
+  <data>
+    <variable
+        name="user"
+        type="com.mvvm.demo.data.entity.User" />
+  </data>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+
+    <ImageView
+        imageUrl="@{user.avatar_url}"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@{user.login}"
+          android:textColor="@android:color/holo_blue_light"
+          tools:ignore="MissingConstraints"
+          tools:text="@tools:sample/full_names" />
+
+    </LinearLayout>
+  </LinearLayout>
+</layout>
